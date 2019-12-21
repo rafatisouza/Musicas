@@ -27,6 +27,11 @@ namespace TrenaWeb.Musicas.AcessoDados.Entity.TypeConfiguration
                 .IsOptional()
                 .HasColumnName("OBSERVACOES")
                 .HasMaxLength(1000);
+            Property(p => p.Email)
+                .IsRequired()
+                .HasColumnName("EMAIL")
+                .HasMaxLength(50);
+            
         }
 
         protected override void ConfigurarFK()
